@@ -8,7 +8,8 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 const routes: Routes = [
-  { path: "", component: HomeComponent },
+  { path: "", redirectTo: "home", pathMatch:"full" },
+  { path: "home", component: HomeComponent },
   { path: "category", component: SingleCategoryComponent },
   { path: "post", component: SinglePostComponent },
   { path: "about", component: AboutUsComponent },
